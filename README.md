@@ -1,5 +1,4 @@
 # DesignPattern
 Language : java
 
-From Head First Design Pattern
-What'the fucking Git????
+学习设计模式时的一些事例。持续更新
