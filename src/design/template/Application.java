@@ -7,10 +7,10 @@ package design.template;
  */
 public class Application {
     public static void main(String[] args) {
-        WatchJoJoTemplate joe = new SomeOneUseMobile();
-        WatchJoJoTemplate gio = new SomeOneUseComputer();
-        joe.watch();
-        System.out.println("----------------------------------");
-        gio.watch();
+        TencentThirdParty tencent = new TencentThirdParty();
+        BaiduThirdParty baidu = new BaiduThirdParty();
+        System.out.println("--------------------------------------");
+        tencent.invoke();
+        baidu.invoke();
     }
 }
