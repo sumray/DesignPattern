@@ -5,7 +5,7 @@ package design.command;
  * @Auther: persona
  * @create 2019/8/6 19:11
  */
-public class Light {
+public class Television {
     private boolean status;
 
     public boolean isStatus() {
@@ -18,6 +18,6 @@ public class Light {
 
     @Override
     public String toString() {
-        return "点灯现在" + (status ? "正在开启" : "已经关闭了");
+        return "电视现在" + (status ? "正在播放动物世界" : "是关闭的");
     }
 }

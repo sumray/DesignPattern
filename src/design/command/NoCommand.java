@@ -1,17 +1,16 @@
 package design.command;
 
 /**
- * @Title: NoCommand
  * @Description: TODO
- * @Auther:
- * @Version: 1.0
- * @create 2019/3/30 22:28
+ * @Auther: persona
+ * @create 2019/8/6 19:17
  */
 public class NoCommand implements Command {
     @Override
-    public void execute() {}
+    public void execute() {
+    }
 
     @Override
-    public void undo(){}
+    public void undo() {
+    }
 }
-

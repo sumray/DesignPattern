@@ -1,13 +1,11 @@
 package design.command;
 
 /**
- * @Title: LightOffCommand
  * @Description: TODO
- * @Auther:
- * @Version: 1.0
- * @create 2019/3/30 22:49
+ * @Auther: persona
+ * @create 2019/8/6 19:09
  */
-public class LightOffCommand implements Command {
+public class LightOffCommand implements Command{
     private Light light;
 
     public LightOffCommand(Light light) {
@@ -16,11 +14,11 @@ public class LightOffCommand implements Command {
 
     @Override
     public void execute() {
-        light.lightOff();
+        this.light.setStatus(false);
     }
 
     @Override
     public void undo() {
-        light.lightOn();
+        this.light.setStatus(this.light.isStatus() ? false : true);
     }
 }

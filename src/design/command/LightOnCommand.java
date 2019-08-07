@@ -1,11 +1,9 @@
 package design.command;
 
 /**
- * @Title: LightOnCommand
  * @Description: TODO
- * @Auther:
- * @Version: 1.0
- * @create 2019/3/30 22:47
+ * @Auther: persona
+ * @create 2019/8/6 19:09
  */
 public class LightOnCommand implements Command {
     private Light light;
@@ -16,11 +14,11 @@ public class LightOnCommand implements Command {
 
     @Override
     public void execute() {
-        light.lightOn();
+        this.light.setStatus(true);
     }
 
     @Override
-    public void undo(){
-        light.lightOff();
+    public void undo() {
+        this.light.setStatus(this.light.isStatus() ? false : true);
     }
 }
