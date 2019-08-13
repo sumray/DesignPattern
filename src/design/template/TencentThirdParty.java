@@ -5,7 +5,7 @@ package design.template;
  * @Auther: persona
  * @create 2019/8/7 17:31
  */
-public class TencentThirdParty extends ThirdPartyService {
+public class TencentThirdParty extends ThirdPartyTemplate {
     @Override
     String getThirdPartyUrl() {
         return "http://www.qq.com";

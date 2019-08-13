@@ -5,7 +5,7 @@ package design.template;
  * @Auther: persona
  * @create 2019/8/7 17:29
  */
-public class BaiduThirdParty extends ThirdPartyService {
+public class BaiduThirdParty extends ThirdPartyTemplate {
     @Override
     String getThirdPartyUrl() {
         return "http://baidu.com";
