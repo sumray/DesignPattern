@@ -5,7 +5,7 @@ package design.template;
  * @Auther: persona
  * @create 2019/8/7 17:18
  */
-public abstract class ThirdPartyService {
+public abstract class ThirdPartyTemplate {
     public final void invoke(){
         String url = this.getThirdPartyUrl();
         ThirdPartyResult result = this.sendHttpRequest(url);
