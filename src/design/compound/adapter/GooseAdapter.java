@@ -14,4 +14,9 @@ public class GooseAdapter implements Quackable {
 	public void quack() {
 		goose.quack();
 	}
+
+	@Override
+	public String toString() {
+		return goose.toString();
+	}
 }

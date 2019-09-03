@@ -7,5 +7,9 @@ public class GreenDuck implements Quackable {
         System.out.println("我是一只绿头鸭，我要开始叫了");
     }
 
+    @Override
+    public String toString() {
+        return "GreenDuck";
+    }
 }
 
